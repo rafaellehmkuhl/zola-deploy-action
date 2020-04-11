@@ -40,6 +40,9 @@ jobs:
     the site files back to the repo.
     
     ( Actions already provides a `GITHUB_TOKEN` which is an installation token and does not trigger a GitHub Pages builds hence we need a personal access token )
+    
+    After creating your Personal Acess key you need to link it to a repository secret. For that, go to the Settings page of your repository and on the Secrets tab add a new secret with the same name used on your .yaml file and the same token value of your Personal Acess key.  
+    
 
 ## Environment Variables
 * `PAGES_BRANCH`: The git branch of your repo to which the built static files will be pushed. Default is `gh-pages` branch
